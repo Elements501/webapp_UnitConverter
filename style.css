@@ -1,0 +1,57 @@
+/*Color Palette
+HIGHLIGHT #F7DB20
+PRIMARY #262622
+SECONDARY #3a3a37
+FONT #f3f6d4*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: #262622;
+    color: #f3f6d4;
+}
+
+h1 {
+    text-align: center;
+    background-color: #3a3a37;
+    color: #F7DB20;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    color: #F7DB20;
+}
+
+input {
+    padding: 8px;
+    border: 0px;
+    background-color: #3a3a37;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #f3f6d4
+}
+
+h2 {
+    margin-top: 30px;
+    background-color: #3a3a37;
+    color: #F7DB20;
+}
+
+p {
+    margin: 5px 10px;
+    padding: 5px;
+    background-color: #3a3a37;
+    border-radius: 4px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Standard property for newer browsers */
+}
