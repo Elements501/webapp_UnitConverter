@@ -30,7 +30,7 @@
                     <input type="number" id="catty" oninput="convertFromCatty()">
                 </td>
                 <td>
-                    <label> Tael (Leung) </label>
+                    <label> Tael (Liang) </label>
                     <input type="number" id="tael" oninput="convertFromTael()">
                 </td>
                 <td>
@@ -43,13 +43,32 @@
 
     <h2> History </h2>
 
+    <table class="historyTable">
+        <tbody>
+            <tr>
+                <td>
+                    <div id="one"> Kilogram </div>
+                </td>
+                <td>
+                    <div id="two"> Catty (Jin) </div>
+                </td>
+                <td>
+                    <div id="three"> Tael (Liang) </div>
+                </td>
+                <td>
+                    <div id="four"> Pound </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
     <script>
         function convertFromKilogram() {
             const kg = parseFloat(document.getElementById('kilogram').value) || 0;
             document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
             document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
             document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
-            addToHistory('Kilogram: ' + kg);
+            addToHistory(document.getElementById('kilogram').value, document.getElementById('catty').value, document.getElementById('tael').value, document.getElementById('pound').value);
         }
 
         function convertFromCatty() {
@@ -57,8 +76,7 @@
             const kg = catty / 0.6048;
             document.getElementById('kilogram').value = kg.toFixed(3);
             document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
-            document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
-            addToHistory('Catty: ' + catty);
+            addToHistory(document.getElementById('kilogram').value + 'kg = ' + document.getElementById('catty').value + ' jin = ' + document.getElementById('tael').value + ' liang = ' + document.getElementById('pound').value + ' lb');
         }
 
         function convertFromTael() {
@@ -79,13 +97,19 @@
             addToHistory('Pound: ' + pound);
         }
 
-        function addToHistory(entry) {
-            if (entry.trim() !== '' && !isNaN(parseFloat(entry.split(': ')[1]))) {
-                const passage = document.createElement('p');
-                passage.textContent = entry;
-                passage.className = 'historyLine';
-                document.body.appendChild(passage);
-            }
+        let cnt = 0;
+        function addToHistory(one, two, three, four) {
+            cnt++;
+
+            const table = document.getElementsByClassName("historyTable")[0].cloneNode(true)
+            table.className = 'historyLine';
+
+            table.querySelector("#one").textContent = one
+            table.querySelector("#two").textContent = two
+            table.querySelector("#three").textContent = three
+            table.querySelector("#four").textContent = four
+
+            document.body.appendChild(table)
         }
     </script>
 </body>

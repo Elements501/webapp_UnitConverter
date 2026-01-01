@@ -88,10 +88,32 @@ input[type="number"] {
     }
 }
 
-.historyLine {
+.historyTable {
+    border-spacing: 3rem 0;
+    margin: 1rem auto 0.5rem auto;
+    width: 75%;
     text-align: center;
+
+    td {
+        box-shadow: 0 -0.5rem 1rem 0 #1f1f1f inset;
+        background-color: #3a3a37;
+        border-radius: 16px;
+        padding: 0.5rem 0 0.5rem 0;
+        width: 25%;
+    }
+}
+
+.historyLine {
+    border-spacing: 3rem 0;
     margin: 0.5rem auto 0 auto;
-    width: 25%;
-    background-color: #3a3a37;
-    border-radius: 1rem;
+    width: 75%;
+    text-align: center;
+
+    td {
+        background-color: #1f1f1f;
+        border: 0.15rem solid #3a3a37;
+        border-radius: 16px;
+        padding: 0.5rem 0 0.5rem 0;
+        width: 25%;
+    }
 }
