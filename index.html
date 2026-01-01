@@ -7,24 +7,39 @@
     <title>Unit Converter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1> Unit Converter </h1>
+    <div class="subtitle"> your helper in calculating weight </div>
 
-    <label>Kilogram: </label>
-    <input type="number" id="kilogram" oninput="convertFromKilogram()">
-
-    <label>Catty(Jin): </label>
-    <input type="number" id="catty" oninput="convertFromCatty()">
-
-    <label>Commercial Tael(Leung): </label>
-    <input type="number" id="tael" oninput="convertFromTael()">
-
-    <label>International Pound: </label>
-    <input type="number" id="pound" oninput="convertFromPound()">
+    <table class="convertTable">
+        <tbody>
+            <tr>
+                <td>
+                    <label>Kilogram </label>
+                    <input type="number" id="kilogram" oninput="convertFromKilogram()">
+                </td>
+                <td>
+                    <label>Catty (Jin)</label>
+                    <input type="number" id="catty" oninput="convertFromCatty()">
+                </td>
+                <td>
+                    <label> Tael (Leung) </label>
+                    <input type="number" id="tael" oninput="convertFromTael()">
+                </td>
+                <td>
+                    <label> Pound </label>
+                    <input type="number" id="pound" oninput="convertFromPound()">
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <h2> History </h2>
 
@@ -65,9 +80,10 @@
         }
 
         function addToHistory(entry) {
-            if ( entry.trim() !== '' && !isNaN(parseFloat(entry.split(': ')[1])) ) {
+            if (entry.trim() !== '' && !isNaN(parseFloat(entry.split(': ')[1]))) {
                 const passage = document.createElement('p');
                 passage.textContent = entry;
+                passage.className = 'historyLine';
                 document.body.appendChild(passage);
             }
         }

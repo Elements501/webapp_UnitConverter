@@ -1,41 +1,31 @@
 /*Color Palette
-HIGHLIGHT #F7DB20
-PRIMARY #262622
-SECONDARY #3a3a37
-FONT #f3f6d4*/
+HIGHLIGHT #66F0F0
+PRIMARY #1f1f1f
+SECONDARY #363838
+FONT #e3e3e3*/
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    background-color: #262622;
-    color: #f3f6d4;
+    font-family: "Montserrat", Calibri, sans-serif;
+    background-color: #1f1f1f;
+    color: #e3e3e3;
 }
 
 h1 {
     text-align: center;
-    background-color: #3a3a37;
-    color: #F7DB20;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px 0;
-    color: #F7DB20;
-}
-
-input {
-    padding: 8px;
-    border: 0px;
-    background-color: #3a3a37;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #f3f6d4
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+    font-size: 48px;
+    font-family: 'Noto Serif', Calibri, serif;
+    color: #e3e3e3;
 }
 
 h2 {
-    margin-top: 30px;
-    background-color: #3a3a37;
-    color: #F7DB20;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+    font-size: 36px;
+    font-family: 'Noto Serif', Calibri, serif;
+    color: #e3e3e3;
 }
 
 p {
@@ -47,11 +37,61 @@ p {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
-  appearance: textfield; /* Standard property for newer browsers */
+    -moz-appearance: textfield;
+    /* Firefox */
+    appearance: textfield;
+    /* Standard property for newer browsers */
+}
+
+/* class */
+
+.subtitle {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #e3e3e3;
+}
+
+.convertTable {
+    border-spacing: 1.5rem 0;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+
+    label {
+        display: block;
+        margin: 10px 0 5px 0;
+        color: #e3e3e3;
+    }
+
+    td {
+        box-shadow: 0 -0.5rem 1rem 0 #1f1f1f inset;
+        background-color: #3a3a37;
+        border-radius: 16px;
+
+        input {
+            box-shadow: 0 0.5rem 1rem 0 #3a3a37 inset, 0 -0.1rem 0.2rem #66F0F0 inset;
+            margin: 0 auto 1rem auto;
+            width: 75%;
+            padding: 0.5rem;
+            border: 0px;
+            background-color: #1f1f1f;
+            border-radius: 32px;
+            font-size: 16px;
+            text-align: center;
+            color: #66F0F0
+        }
+    }
+}
+
+.historyLine {
+    text-align: center;
+    margin: 0.5rem auto 0 auto;
+    width: 25%;
+    background-color: #3a3a37;
+    border-radius: 1rem;
 }
