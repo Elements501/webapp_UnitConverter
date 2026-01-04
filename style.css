@@ -117,3 +117,23 @@ input[type="number"] {
         width: 25%;
     }
 }
+
+.longButton {
+    margin: 1rem auto 1rem auto;
+    width: 55%;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #e3e3e3;
+    background-color: #1f1f1f;
+    border: 0.15rem solid #3a3a37;
+    border-radius: 1rem;
+    transition-duration: 200ms;
+}
+
+.longButton:hover {
+    border: 0.15rem solid #e3e3e3;
+    background-color: #e3e3e3;
+    color: #1f1f1f;
+}

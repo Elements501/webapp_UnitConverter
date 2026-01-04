@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,6 +43,10 @@
         </tbody>
     </table>
 
+    <button id="historyButton" class="longButton"
+        onclick="addToHistory(document.getElementById('kilogram').value, document.getElementById('catty').value, document.getElementById('tael').value, document.getElementById('pound').value)">
+        Enter </button>
+
     <h2> History </h2>
 
     <table class="historyTable">
@@ -62,56 +68,13 @@
         </tbody>
     </table>
 
-    <script>
-        function convertFromKilogram() {
-            const kg = parseFloat(document.getElementById('kilogram').value) || 0;
-            document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
-            document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
-            document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
-            addToHistory(document.getElementById('kilogram').value, document.getElementById('catty').value, document.getElementById('tael').value, document.getElementById('pound').value);
-        }
+    <div id="historyContainer"></div>
 
-        function convertFromCatty() {
-            const catty = parseFloat(document.getElementById('catty').value) || 0;
-            const kg = catty / 0.6048;
-            document.getElementById('kilogram').value = kg.toFixed(3);
-            document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
-            addToHistory(document.getElementById('kilogram').value + 'kg = ' + document.getElementById('catty').value + ' jin = ' + document.getElementById('tael').value + ' liang = ' + document.getElementById('pound').value + ' lb');
-        }
+    <button id="clearButton" class="longButton" onclick="clearHistory()">
+        Clear </button>
 
-        function convertFromTael() {
-            const tael = parseFloat(document.getElementById('tael').value) || 0;
-            const kg = tael / 26.45547;
-            document.getElementById('kilogram').value = kg.toFixed(3);
-            document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
-            document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
-            addToHistory('Tael: ' + tael);
-        }
+    <script src="script.js"></script>
 
-        function convertFromPound() {
-            const pound = parseFloat(document.getElementById('pound').value) || 0;
-            const kg = pound / 2.20462;
-            document.getElementById('kilogram').value = kg.toFixed(3);
-            document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
-            document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
-            addToHistory('Pound: ' + pound);
-        }
-
-        let cnt = 0;
-        function addToHistory(one, two, three, four) {
-            cnt++;
-
-            const table = document.getElementsByClassName("historyTable")[0].cloneNode(true)
-            table.className = 'historyLine';
-
-            table.querySelector("#one").textContent = one
-            table.querySelector("#two").textContent = two
-            table.querySelector("#three").textContent = three
-            table.querySelector("#four").textContent = four
-
-            document.body.appendChild(table)
-        }
-    </script>
 </body>
 
 </html>
