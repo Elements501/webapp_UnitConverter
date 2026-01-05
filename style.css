@@ -14,7 +14,7 @@ h1 {
     text-align: center;
     margin: 1rem 0 0 0;
     padding: 1rem 0 0 0;
-    font-size: 48px;
+    font-size: 2rem;
     font-family: 'Noto Serif', Calibri, serif;
     color: #e3e3e3;
 }
@@ -23,7 +23,7 @@ h2 {
     text-align: center;
     margin: 1rem 0 0 0;
     padding: 1rem 0 0 0;
-    font-size: 36px;
+    font-size: 1.5rem;
     font-family: 'Noto Serif', Calibri, serif;
     color: #e3e3e3;
 }
@@ -53,35 +53,41 @@ input[type="number"] {
 .subtitle {
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
     margin: 0;
     color: #e3e3e3;
 }
 
 .convertTable {
-    border-spacing: 1.5rem 0;
-    margin: 2rem auto 0 auto;
+    display: flex;
+    gap: 2%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    label {
-        display: block;
-        margin: 10px 0 5px 0;
-        color: #e3e3e3;
-    }
-
-    td {
+    div {
+        flex: 1;
         box-shadow: 0 -0.5rem 1rem 0 #1f1f1f inset;
         background-color: #3a3a37;
         border-radius: 16px;
+        margin: 2rem 0 0.5rem 0;
+        box-sizing: border-box;
+        font-size: 0.7rem;
+
+        label {
+            display: block;
+            margin: 10px 0 5px 0;
+            color: #e3e3e3;
+        }
 
         input {
             box-shadow: 0 0.5rem 1rem 0 #3a3a37 inset, 0 -0.1rem 0.2rem #66F0F0 inset;
             margin: 0 auto 1rem auto;
-            width: 75%;
+            width: 60%;
             padding: 0.5rem;
             border: 0px;
             background-color: #1f1f1f;
             border-radius: 32px;
-            font-size: 16px;
             text-align: center;
             color: #66F0F0
         }
@@ -89,32 +95,41 @@ input[type="number"] {
 }
 
 .historyTable {
-    border-spacing: 3rem 0;
-    margin: 1rem auto 0.5rem auto;
-    width: 75%;
+    display: flex;
+    gap: 2%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    td {
+    div {
+        flex: 1;
         box-shadow: 0 -0.5rem 1rem 0 #1f1f1f inset;
         background-color: #3a3a37;
         border-radius: 16px;
         padding: 0.5rem 0 0.5rem 0;
-        width: 25%;
+        margin: 1rem 0 0 0;
+        box-sizing: border-box;
+        font-size: 0.7rem;
     }
 }
 
 .historyLine {
-    border-spacing: 3rem 0;
-    margin: 0.5rem auto 0 auto;
-    width: 75%;
+    display: flex;
+    gap: 2%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    td {
+    div {
+        flex: 1;
         background-color: #1f1f1f;
         border: 0.15rem solid #3a3a37;
         border-radius: 16px;
-        padding: 0.5rem 0 0.5rem 0;
-        width: 25%;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        padding: 0.35rem 0 0.35rem 0;
+        box-sizing: border-box;
+        font-size: 0.7rem;
     }
 }
 
