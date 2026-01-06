@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
+    <link rel="icon" type="image/png" href="logo_v1.png">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,6 +47,7 @@
     <h2> History </h2>
 
     <div class="historyTable">
+        <div id="deleteButton"> DEL </div>
         <div id="one"> Kilogram </div>
         <div id="two"> Catty (Jin) </div>
         <div id="three"> Tael (Liang) </div>
@@ -57,6 +59,7 @@
     <button id="clearButton" class="longButton" onclick="clearHistory()">
         Clear </button>
 
+    <div id="credits"> by Alex Pun from Elements Studio. Last Updated: <span id="update-time"></span> </div>
     <script src="script.js"></script>
 
 </body>

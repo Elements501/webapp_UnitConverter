@@ -111,6 +111,10 @@ input[type="number"] {
         box-sizing: border-box;
         font-size: 0.7rem;
     }
+
+    #deleteButton {
+        display: none;
+    }
 }
 
 .historyLine {
@@ -125,11 +129,23 @@ input[type="number"] {
         background-color: #1f1f1f;
         border: 0.15rem solid #3a3a37;
         border-radius: 16px;
-        margin: 1rem 0 0 0;
+        margin: 0.5rem 0 0 0;
         text-align: center;
         padding: 0.35rem 0 0.35rem 0;
         box-sizing: border-box;
         font-size: 0.7rem;
+    }
+
+    #deleteButton {
+        flex: 1 3 0;
+        display: none;
+        background-color: #e3e3e3;
+        text-align: right;
+        color: #1f1f1f;
+        padding: 0.35rem 0.2rem 0.35rem 0.1rem;
+        border: none;
+        border-radius: 0 16px 16px 0;
+        box-shadow: 1rem 0 1rem 0.1rem #1f1f1f inset;
     }
 }
 
@@ -151,4 +167,9 @@ input[type="number"] {
     border: 0.15rem solid #e3e3e3;
     background-color: #e3e3e3;
     color: #1f1f1f;
+}
+
+#credits {
+    font-size: 0.5rem;
+    text-align: center;
 }
