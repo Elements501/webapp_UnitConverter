@@ -28,13 +28,6 @@ h2 {
     color: #e3e3e3;
 }
 
-p {
-    margin: 5px 10px;
-    padding: 5px;
-    background-color: #3a3a37;
-    border-radius: 4px;
-}
-
 nav {
     display: flex;
 
@@ -67,6 +60,8 @@ nav {
         background-color: #1f1f1f;
     }
 }
+
+/* index */
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -206,4 +201,41 @@ input[type="number"] {
 #credits {
     font-size: 0.5rem;
     text-align: center;
+}
+
+/* priceComparison */
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 1rem 0 1rem;
+    padding: 0.5rem 0;
+    border: 0.15rem solid #3a3a37;
+    border-radius: 1rem 1rem 0 0;
+
+    label {
+        flex: 2;
+        display: inline;
+        margin: 0 1rem;
+        color: #e3e3e3;
+    }
+
+    select {
+        flex: 3;
+        box-shadow: 0 0.5rem 1rem 0 #3a3a37 inset, 0 -0.1rem 0.2rem #66F0F0 inset;
+        margin: 0 1rem;
+        padding: 0.5rem;
+        border: 0px;
+        background-color: #1f1f1f;
+        border-radius: 32px;
+        text-align: center;
+        color: #66F0F0
+    }
+}
+
+#subCategoryContainer {
+    display: none;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 0;
 }

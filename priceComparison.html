@@ -24,6 +24,27 @@
     </nav>
 
     <h1> Price Comparison </h1>
+    <div class="subtitle"> compare all prices in one click </div>
+
+    <div id="categoryContainer" class="category">
+        <label> Cateogry: </label>
+        <select id="category" onchange="updateCategory()">
+            <option value=""> SELECT CATEGORY </option>
+            <option value="meat"> Meat </option>
+            <option value="vegetable"> Vegetable </option>
+            <option value="seafood"> Seafood </option>
+        </select>
+    </div>
+
+    <div id="subCategoryContainer" class="category">
+        <label> Subcategory: </label>
+        <select id="subCategory" onchange="updateSubCategory()">
+            <option value=""> SELECT CATEGORY </option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

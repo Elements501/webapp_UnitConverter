@@ -1,7 +1,7 @@
 // Initialise
 const updateTimeElement = document.getElementById('update-time');
 const now = new Date();
-updateTimeElement.textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString() + " UTC+8";
+if (updateTimeElement != null) { updateTimeElement.textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString() + " UTC+8"; }
 
 window.onload = function () {
     let list = JSON.parse(localStorage.getItem("localHistory")) || [];
@@ -52,6 +52,30 @@ function addToHistory(one, two, three, four) {
 function clearHistory() {
     document.getElementById("historyContainer").replaceChildren();
     localStorage.removeItem("localHistory");
+}
+
+const data = {
+    meat: ["pork belly", "beef patties", "chicken breast"],
+    vegetable: ["carrots", "potatoes", "bell peppers"],
+}
+function updateCategory() {
+    const category = document.getElementById("category").value;
+    const subCategory = document.getElementById("subCategory");
+
+    // Remove all option class
+    subCategory.innerHTML = '<option value=""> SELECT ITEM </option>'
+
+    if (category && data[category]) {
+        document.getElementById("subCategoryContainer").style.display = "flex";
+        data[category].forEach(element => {
+            let item = document.createElement("option");
+            item.value = element.toLowerCase();
+            item.textContent = element;
+            subCategory.appendChild(item);
+        });
+    } else if (category == "") {
+        document.getElementById("subCategoryContainer").style.display = "none";
+    }
 }
 
 // LOCAL FUNCTION
