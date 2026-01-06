@@ -79,7 +79,6 @@ function displayHistory(one, two, three, four) {
         const currentX = e.touches[0].clientX;
         const deltaX = currentX - startX;
         if (deltaX > 0) {
-            console.log(deltaX)
             deleteButton.style.flex = `${deltaX * 0.01}`
             deleteButton.style.boxShadow = `${deltaX * 0.01 + 1}rem 0 1rem 0.1rem #1f1f1f inset`
         }
