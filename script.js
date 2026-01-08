@@ -3,11 +3,44 @@ const updateTimeElement = document.getElementById('update-time');
 const now = new Date();
 if (updateTimeElement != null) { updateTimeElement.textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString() + " UTC+8"; }
 
+let data = {} //for category lookup
+let price = {} // for price lookup
 window.onload = function () {
-    let list = JSON.parse(localStorage.getItem("localHistory")) || [];
-    list.forEach(element => {
-        displayHistory(element.kilogram, element.catty, element.tael, element.pound)
-    });
+    if (window.location.pathname == "/index.html") {
+        let list = JSON.parse(localStorage.getItem("localHistory")) || [];
+        list.forEach(element => {
+            displayHistory(element.kilogram, element.catty, element.tael, element.pound)
+        });
+    } else if (window.location.pathname == "/priceComparison.html") {
+        // Obtain from prices.json
+        fetch('prices.json')
+            .then(response => response.json())
+            .then(json => {
+                json.forEach(item => {
+                    const cat = item["Category"];
+                    if (!data[cat]) { data[cat] = [] }; //Create new child array
+                    const food = item["Food Item"]
+                    data[cat].push(food);
+
+                    price[food] = []; //price[Fppd Item] = {min Price, max Price, unit}
+                    price[food].push(item["Min Price (HKD)"]);
+                    price[food].push(item["Max Price (HKD)"]);
+                    price[food].push(item["Unit"]);
+                });
+
+                const categorySelect = document.getElementById("category");
+                categorySelect.innerHTML = '<option value=""> SELECT CATEGORY </option>';
+                Object.keys(data).forEach(cat => {
+                    let option = document.createElement("option");
+                    option.value = cat;
+                    option.textContent = cat; // Capitalize for display
+                    categorySelect.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error loading prices.json:', error));
+        console.log(data)
+        console.log(price)
+    }
 }
 
 // HTML Listen
@@ -54,10 +87,6 @@ function clearHistory() {
     localStorage.removeItem("localHistory");
 }
 
-const data = {
-    meat: ["pork belly", "beef patties", "chicken breast"],
-    vegetable: ["carrots", "potatoes", "bell peppers"],
-}
 function updateCategory() {
     const category = document.getElementById("category").value;
     const subCategory = document.getElementById("subCategory");
@@ -69,13 +98,32 @@ function updateCategory() {
         document.getElementById("subCategoryContainer").style.display = "flex";
         data[category].forEach(element => {
             let item = document.createElement("option");
-            item.value = element.toLowerCase();
+            item.value = element;
             item.textContent = element;
             subCategory.appendChild(item);
         });
-    } else if (category == "") {
+    } else {
         document.getElementById("subCategoryContainer").style.display = "none";
     }
+}
+
+function updateSubCategory() {
+    const subCategory = document.getElementById("subCategory");
+    if (subCategory.value) {
+        document.getElementById("priceContainer").style.display = "flex"
+        document.getElementById("priceBar").style.display = "flex"
+        document.getElementById("minPriceNum").textContent = price[subCategory.value][0] + " / " + price[subCategory.value][2]
+        document.getElementById("maxPriceNum").textContent = price[subCategory.value][1] + " / " + price[subCategory.value][2]
+    } else {
+        document.getElementById("priceContainer").style.display = "none"
+        document.getElementById("priceBar").style.display = "none"
+        document.getElementById("minPriceNum").textContent = null
+        document.getElementById("maxPriceNum").textContent = null
+    }
+}
+
+function updatePrice() {
+    const priceBar = document.getElementById("priceBar")
 }
 
 // LOCAL FUNCTION

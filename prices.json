@@ -1,0 +1,842 @@
+[
+    {
+        "Category": "Drinks",
+        "Food Item": "Bottled Water",
+        "Unit": "kg",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 12,
+        "null": null
+    },
+    {
+        "Category": "Drinks",
+        "Food Item": "Cola",
+        "Unit": "kg",
+        "Min Price (HKD)": 15,
+        "Max Price (HKD)": 21,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Fuji Apples (Japan/US)",
+        "Unit": "piece",
+        "Min Price (HKD)": 6,
+        "Max Price (HKD)": 12,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Washington Apples (USA)",
+        "Unit": "piece",
+        "Min Price (HKD)": 5,
+        "Max Price (HKD)": 10,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Dragon Fruit (White)",
+        "Unit": "piece",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 15,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Dragon Fruit (Red)",
+        "Unit": "piece",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 25,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Philippine Bananas",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 14,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Thai Bananas",
+        "Unit": "catty",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 16,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Navel Oranges (USA)",
+        "Unit": "piece",
+        "Min Price (HKD)": 5,
+        "Max Price (HKD)": 9,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "South African Oranges",
+        "Unit": "piece",
+        "Min Price (HKD)": 4,
+        "Max Price (HKD)": 8,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Strawberries (Korea)",
+        "Unit": "pack",
+        "Min Price (HKD)": 25,
+        "Max Price (HKD)": 45,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Strawberries (Japan)",
+        "Unit": "pack",
+        "Min Price (HKD)": 40,
+        "Max Price (HKD)": 80,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Thai Mangoes",
+        "Unit": "piece",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 20,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Philippine Mangoes",
+        "Unit": "piece",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 18,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Seedless Grapes (USA)",
+        "Unit": "catty",
+        "Min Price (HKD)": 25,
+        "Max Price (HKD)": 40,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Kyoho Grapes (Japan)",
+        "Unit": "catty",
+        "Min Price (HKD)": 50,
+        "Max Price (HKD)": 100,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Thai Durian (in season)",
+        "Unit": "catty",
+        "Min Price (HKD)": 40,
+        "Max Price (HKD)": 100,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Malaysian Durian",
+        "Unit": "catty",
+        "Min Price (HKD)": 60,
+        "Max Price (HKD)": 150,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Hami Melon (China)",
+        "Unit": "piece",
+        "Min Price (HKD)": 25,
+        "Max Price (HKD)": 50,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Pineapple (Philippines)",
+        "Unit": "piece",
+        "Min Price (HKD)": 15,
+        "Max Price (HKD)": 30,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Kiwi (New Zealand)",
+        "Unit": "piece",
+        "Min Price (HKD)": 3,
+        "Max Price (HKD)": 6,
+        "null": null
+    },
+    {
+        "Category": "Fruits",
+        "Food Item": "Pears (China/Korea)",
+        "Unit": "piece",
+        "Min Price (HKD)": 5,
+        "Max Price (HKD)": 12,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Chicken (Whole)",
+        "Unit": "catty",
+        "Min Price (HKD)": 35,
+        "Max Price (HKD)": 50,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Chicken Breast",
+        "Unit": "catty",
+        "Min Price (HKD)": 45,
+        "Max Price (HKD)": 65,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Chicken Wings",
+        "Unit": "catty",
+        "Min Price (HKD)": 30,
+        "Max Price (HKD)": 45,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Pork Belly",
+        "Unit": "catty",
+        "Min Price (HKD)": 55,
+        "Max Price (HKD)": 85,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Pork Chop (Lean)",
+        "Unit": "catty",
+        "Min Price (HKD)": 70,
+        "Max Price (HKD)": 100,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Pork Ribs",
+        "Unit": "catty",
+        "Min Price (HKD)": 65,
+        "Max Price (HKD)": 95,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Minced Pork",
+        "Unit": "catty",
+        "Min Price (HKD)": 50,
+        "Max Price (HKD)": 75,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Beef Brisket",
+        "Unit": "catty",
+        "Min Price (HKD)": 80,
+        "Max Price (HKD)": 120,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Beef Chuck/Round",
+        "Unit": "catty",
+        "Min Price (HKD)": 90,
+        "Max Price (HKD)": 140,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Beef Flank",
+        "Unit": "catty",
+        "Min Price (HKD)": 95,
+        "Max Price (HKD)": 150,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Beef Shank",
+        "Unit": "catty",
+        "Min Price (HKD)": 75,
+        "Max Price (HKD)": 110,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Lamb Chops",
+        "Unit": "catty",
+        "Min Price (HKD)": 100,
+        "Max Price (HKD)": 160,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Duck (Whole)",
+        "Unit": "catty",
+        "Min Price (HKD)": 40,
+        "Max Price (HKD)": 60,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Chinese Sausage",
+        "Unit": "catty",
+        "Min Price (HKD)": 80,
+        "Max Price (HKD)": 130,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Char Siu (Prepared)",
+        "Unit": "catty",
+        "Min Price (HKD)": 100,
+        "Max Price (HKD)": 160,
+        "null": null
+    },
+    {
+        "Category": "Meat",
+        "Food Item": "Roast Pork (Siu Yuk)",
+        "Unit": "catty",
+        "Min Price (HKD)": 110,
+        "Max Price (HKD)": 180,
+        "null": null
+    },
+    {
+        "Category": "Poultry",
+        "Food Item": "Eggs",
+        "Unit": "kg",
+        "Min Price (HKD)": 33,
+        "Max Price (HKD)": 50,
+        "null": null
+    },
+    {
+        "Category": "Poultry",
+        "Food Item": "Milk",
+        "Unit": "kg",
+        "Min Price (HKD)": 26,
+        "Max Price (HKD)": 36,
+        "null": null
+    },
+    {
+        "Category": "Poultry",
+        "Food Item": "Yogurt",
+        "Unit": "kg",
+        "Min Price (HKD)": 53,
+        "Max Price (HKD)": 100,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Garoupa (Fresh, Live)",
+        "Unit": "catty",
+        "Min Price (HKD)": 150,
+        "Max Price (HKD)": 300,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Mandarin Fish (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 80,
+        "Max Price (HKD)": 160,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Pomfret (White, Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 100,
+        "Max Price (HKD)": 200,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Pomfret (Black, Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 70,
+        "Max Price (HKD)": 140,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Sea Bass (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 60,
+        "Max Price (HKD)": 120,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Red Snapper",
+        "Unit": "catty",
+        "Min Price (HKD)": 90,
+        "Max Price (HKD)": 180,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Mackerel (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 40,
+        "Max Price (HKD)": 80,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Yellow Croaker",
+        "Unit": "catty",
+        "Min Price (HKD)": 50,
+        "Max Price (HKD)": 100,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Salmon (Imported, Fillets)",
+        "Unit": "catty",
+        "Min Price (HKD)": 100,
+        "Max Price (HKD)": 180,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Cod Fish (Imported)",
+        "Unit": "catty",
+        "Min Price (HKD)": 120,
+        "Max Price (HKD)": 250,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Tilapia (Freshwater)",
+        "Unit": "catty",
+        "Min Price (HKD)": 35,
+        "Max Price (HKD)": 65,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Shrimp (Medium, Shell-on)",
+        "Unit": "catty",
+        "Min Price (HKD)": 60,
+        "Max Price (HKD)": 120,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Prawns (Large, Tiger)",
+        "Unit": "catty",
+        "Min Price (HKD)": 100,
+        "Max Price (HKD)": 200,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Mantis Shrimp",
+        "Unit": "catty",
+        "Min Price (HKD)": 80,
+        "Max Price (HKD)": 150,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Crab (Mud Crab, Live)",
+        "Unit": "catty",
+        "Min Price (HKD)": 120,
+        "Max Price (HKD)": 220,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Crab (Hairy Crab, Seasonal)",
+        "Unit": "each",
+        "Min Price (HKD)": 80,
+        "Max Price (HKD)": 200,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Lobster (Live)",
+        "Unit": "catty",
+        "Min Price (HKD)": 200,
+        "Max Price (HKD)": 400,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Scallops (Fresh, with Shell)",
+        "Unit": "catty",
+        "Min Price (HKD)": 100,
+        "Max Price (HKD)": 180,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Clams (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 30,
+        "Max Price (HKD)": 60,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Mussels (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 25,
+        "Max Price (HKD)": 50,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Oysters (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 50,
+        "Max Price (HKD)": 100,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Squid (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 40,
+        "Max Price (HKD)": 80,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Cuttlefish (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 50,
+        "Max Price (HKD)": 90,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Octopus (Fresh)",
+        "Unit": "catty",
+        "Min Price (HKD)": 60,
+        "Max Price (HKD)": 110,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Fish Balls (Processed)",
+        "Unit": "catty",
+        "Min Price (HKD)": 25,
+        "Max Price (HKD)": 45,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Dried Scallops (Premium)",
+        "Unit": "catty",
+        "Min Price (HKD)": 800,
+        "Max Price (HKD)": 2000,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Dried Abalone",
+        "Unit": "catty",
+        "Min Price (HKD)": 1000,
+        "Max Price (HKD)": 5000,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Sea Cucumber (Dried)",
+        "Unit": "catty",
+        "Min Price (HKD)": 600,
+        "Max Price (HKD)": 1500,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Jellyfish (Processed)",
+        "Unit": "catty",
+        "Min Price (HKD)": 40,
+        "Max Price (HKD)": 80,
+        "null": null
+    },
+    {
+        "Category": "Seafood",
+        "Food Item": "Fish Maw (Dried)",
+        "Unit": "catty",
+        "Min Price (HKD)": 500,
+        "Max Price (HKD)": 1200,
+        "null": null
+    },
+    {
+        "Category": "Staples",
+        "Food Item": "Rice",
+        "Unit": "kg",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 20,
+        "null": null
+    },
+    {
+        "Category": "Staples",
+        "Food Item": "Bread",
+        "Unit": "kg",
+        "Min Price (HKD)": 20,
+        "Max Price (HKD)": 33,
+        "null": null
+    },
+    {
+        "Category": "Staples",
+        "Food Item": "Instant Noodles",
+        "Unit": "kg",
+        "Min Price (HKD)": 20,
+        "Max Price (HKD)": 40,
+        "null": null
+    },
+    {
+        "Category": "Staples",
+        "Food Item": "Cooking Oil",
+        "Unit": "kg",
+        "Min Price (HKD)": 19,
+        "Max Price (HKD)": 28,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Chinese Cabbage (\u5927\u767d\u83dc)",
+        "Unit": "catty",
+        "Min Price (HKD)": 6,
+        "Max Price (HKD)": 12,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Bok Choy (\u5c0f\u767d\u83dc)",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 15,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Gai Lan (Chinese Broccoli)",
+        "Unit": "catty",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 18,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Choy Sum (\u83dc\u5fc3)",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 16,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Spinach",
+        "Unit": "catty",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 20,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Water Spinach (\u901a\u83dc)",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 14,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Lettuce (Iceberg/Romaine)",
+        "Unit": "piece",
+        "Min Price (HKD)": 6,
+        "Max Price (HKD)": 12,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Potatoes (Imported)",
+        "Unit": "kg",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 18,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Sweet Potatoes",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 14,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Tomatoes (Regular)",
+        "Unit": "catty",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 20,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Cherry Tomatoes",
+        "Unit": "catty",
+        "Min Price (HKD)": 15,
+        "Max Price (HKD)": 30,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Carrots",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 14,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "White Radish (Daikon)",
+        "Unit": "catty",
+        "Min Price (HKD)": 6,
+        "Max Price (HKD)": 12,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Cucumbers",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 15,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Bell Peppers (Green)",
+        "Unit": "catty",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 22,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Bell Peppers (Red/Yellow)",
+        "Unit": "catty",
+        "Min Price (HKD)": 15,
+        "Max Price (HKD)": 28,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Eggplant",
+        "Unit": "catty",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 18,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Onions (Yellow)",
+        "Unit": "catty",
+        "Min Price (HKD)": 8,
+        "Max Price (HKD)": 14,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Garlic (China)",
+        "Unit": "catty",
+        "Min Price (HKD)": 15,
+        "Max Price (HKD)": 25,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Ginger",
+        "Unit": "catty",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 22,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Spring Onions (Scallions)",
+        "Unit": "bunch",
+        "Min Price (HKD)": 3,
+        "Max Price (HKD)": 6,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Corn (Sweet)",
+        "Unit": "piece",
+        "Min Price (HKD)": 5,
+        "Max Price (HKD)": 10,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Broccoli",
+        "Unit": "catty",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 20,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Cauliflower",
+        "Unit": "catty",
+        "Min Price (HKD)": 10,
+        "Max Price (HKD)": 18,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Mushrooms (Button)",
+        "Unit": "catty",
+        "Min Price (HKD)": 15,
+        "Max Price (HKD)": 25,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Shitake Mushrooms (Dried)",
+        "Unit": "catty",
+        "Min Price (HKD)": 80,
+        "Max Price (HKD)": 150,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Bamboo Shoots",
+        "Unit": "catty",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 22,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Bean Sprouts",
+        "Unit": "catty",
+        "Min Price (HKD)": 5,
+        "Max Price (HKD)": 9,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Snow Peas",
+        "Unit": "catty",
+        "Min Price (HKD)": 18,
+        "Max Price (HKD)": 30,
+        "null": null
+    },
+    {
+        "Category": "Vegetables",
+        "Food Item": "Lotus Root",
+        "Unit": "catty",
+        "Min Price (HKD)": 12,
+        "Max Price (HKD)": 20,
+        "null": null
+    }
+]

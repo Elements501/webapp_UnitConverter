@@ -30,9 +30,6 @@
         <label> Cateogry: </label>
         <select id="category" onchange="updateCategory()">
             <option value=""> SELECT CATEGORY </option>
-            <option value="meat"> Meat </option>
-            <option value="vegetable"> Vegetable </option>
-            <option value="seafood"> Seafood </option>
         </select>
     </div>
 
@@ -41,6 +38,16 @@
         <select id="subCategory" onchange="updateSubCategory()">
             <option value=""> SELECT CATEGORY </option>
         </select>
+    </div>
+
+    <div id="priceContainer" class="category">
+        <label> Input Price: </label>
+        <input type="number" id="priceInput" oninput="updatePrice()">
+    </div>
+
+    <div id="priceBar">
+        <label id="minPriceNum"></label>
+        <label id="maxPriceNum"></label>
     </div>
 
     <script src="script.js"></script>
