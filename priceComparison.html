@@ -43,11 +43,24 @@
     <div id="priceContainer" class="category">
         <label> Input Price: </label>
         <input type="number" id="priceInput" oninput="updatePrice()">
+        <select id="priceUnit" onchange="updatePrice()">
+            <option value="piece"> Piece </option>
+            <option value="kilo"> Kilogram </option>
+            <option value="catty"> Catty (Jin) </option>
+            <option value="tael"> Tael (Leung) </option>
+            <option value="pound"> Pound </option>
+        </select>
     </div>
 
-    <div id="priceBar">
-        <label id="minPriceNum"></label>
-        <label id="maxPriceNum"></label>
+    <div id="compareContainer">
+        <div id="minPriceBox" class="compareBox">
+            <label> Min Avg Price </label>
+            <p id="minPriceNum"></p>
+        </div>
+        <div id="maxPriceBox" class="compareBox">
+            <label> Max Avg Price </label>
+            <p id="maxPriceNum"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>

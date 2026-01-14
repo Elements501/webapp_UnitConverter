@@ -111,19 +111,19 @@ function updateSubCategory() {
     const subCategory = document.getElementById("subCategory");
     if (subCategory.value) {
         document.getElementById("priceContainer").style.display = "flex"
-        document.getElementById("priceBar").style.display = "flex"
+        document.getElementById("compareContainer").style.display = "flex"
         document.getElementById("minPriceNum").textContent = price[subCategory.value][0] + " / " + price[subCategory.value][2]
         document.getElementById("maxPriceNum").textContent = price[subCategory.value][1] + " / " + price[subCategory.value][2]
     } else {
         document.getElementById("priceContainer").style.display = "none"
-        document.getElementById("priceBar").style.display = "none"
+        document.getElementById("compareContainer").style.display = "none"
         document.getElementById("minPriceNum").textContent = null
         document.getElementById("maxPriceNum").textContent = null
     }
 }
 
 function updatePrice() {
-    const priceBar = document.getElementById("priceBar")
+
 }
 
 // LOCAL FUNCTION
