@@ -46,23 +46,24 @@ window.onload = function () {
 // HTML Listen
 function convertFromKilogram() {
     const kg = parseFloat(document.getElementById('kilogram').value) || 0;
-    document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
+    document.getElementById('catty').value = (kg * 1.653).toFixed(3);
     document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
     document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
 }
 
 function convertFromCatty() {
     const catty = parseFloat(document.getElementById('catty').value) || 0;
-    const kg = catty / 0.6048;
+    const kg = catty / 1.653;
     document.getElementById('kilogram').value = kg.toFixed(3);
     document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
+    document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
 }
 
 function convertFromTael() {
     const tael = parseFloat(document.getElementById('tael').value) || 0;
     const kg = tael / 26.45547;
     document.getElementById('kilogram').value = kg.toFixed(3);
-    document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
+    document.getElementById('catty').value = (kg * 1.653).toFixed(3);
     document.getElementById('pound').value = (kg * 2.20462).toFixed(3);
 }
 
@@ -70,7 +71,7 @@ function convertFromPound() {
     const pound = parseFloat(document.getElementById('pound').value) || 0;
     const kg = pound / 2.20462;
     document.getElementById('kilogram').value = kg.toFixed(3);
-    document.getElementById('catty').value = (kg / 0.6048).toFixed(3);
+    document.getElementById('catty').value = (kg * 1.653).toFixed(3);
     document.getElementById('tael').value = (kg * 26.45547).toFixed(3);
 }
 
@@ -104,6 +105,8 @@ function updateCategory() {
         });
     } else {
         document.getElementById("subCategoryContainer").style.display = "none";
+        subCategory.value = ""
+        updateSubCategory()
     }
 }
 
@@ -112,18 +115,44 @@ function updateSubCategory() {
     if (subCategory.value) {
         document.getElementById("priceContainer").style.display = "flex"
         document.getElementById("compareContainer").style.display = "flex"
+        document.getElementById("percentageContainer").style.display = "flex"
         document.getElementById("minPriceNum").textContent = price[subCategory.value][0] + " / " + price[subCategory.value][2]
         document.getElementById("maxPriceNum").textContent = price[subCategory.value][1] + " / " + price[subCategory.value][2]
     } else {
         document.getElementById("priceContainer").style.display = "none"
         document.getElementById("compareContainer").style.display = "none"
+        document.getElementById("percentageContainer").style.display = "none"
         document.getElementById("minPriceNum").textContent = null
         document.getElementById("maxPriceNum").textContent = null
     }
 }
 
 function updatePrice() {
+    const subCategory = document.getElementById("subCategory").value;
+    let avgPrice = (price[subCategory][0] + price[subCategory][1]) / 2;
+    if (price[subCategory][2] == "catty") {
+        avgPrice /= 1.653;
+    } else if (price[subCategory][2] == "tael") {
+        avgPrice /= 26.45547;
+    } else if (price[subCategory][2] == "pound") {
+        avgPrice /= 2.20462;
+    }
 
+    const unit = document.getElementById("priceUnit").value
+    let input = document.getElementById("priceInput").value
+    if (unit == "catty") {
+        input /= 1.653;
+    } else if (unit == "tael") {
+        input /= 26.45547;
+    } else if (unit == "pound") {
+        input /= 2.20462;
+    }
+
+    if (unit == "piece" ^ price[subCategory][2] == "piece") {
+        document.getElementById("percentageNumber").textContent = "INVALID"
+    } else {
+        document.getElementById("percentageNumber").textContent = `${(input / avgPrice * 100).toFixed(3)}%`
+    }
 }
 
 // LOCAL FUNCTION
